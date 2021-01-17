@@ -1,0 +1,447 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  overflow-x: hidden;
+  background:rgb(93, 93, 93);
+}
+nav {
+  display: block;
+  height: 72px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  border-bottom: 5px solid rgb(93, 93, 93);
+  background: rgb(0,86,183);
+  background: linear-gradient(90deg, rgba(0,86,183,1) 35%, rgba(50,185,255,1) 83%);
+}
+nav img {
+  height: 70%;
+  padding: 11px 20px;
+  float: left;
+}
+
+.header {
+  position: relative;
+  height: 600px;
+}
+.header img {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  transform: scaleX(1.25);
+  border-bottom: 2px solid blue;
+}
+.header h1 {
+  position: relative;
+  color: white;
+  font-family: moonfont;
+  font-size: 90px;
+  vertical-align: middle;
+  text-align: center;
+  top: 200px;
+  letter-spacing: 5px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 100%
+}
+.ontario_button{
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  left: 100px;
+  top: 900;
+}
+.quebec_button{
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  left: 100px;
+  top: 1000;
+}
+.alberta_button{
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  left: 100px;
+  top: 1100;
+}
+.manitoba_button{
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  left: 100px;
+  top: 1200;
+}
+
+.yukon_button{
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  left: 100px;
+  top: 1300;
+}
+
+.nwt_button{
+  width: 160px;
+  height: 25px;
+  position: absolute;
+  left: 100px;
+  top: 1400;
+}
+
+.nunavut_button{
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  right: 100px;
+  top: 900;
+}
+.nfl_button{
+  width: 200px;
+  height: 25px;
+  position: absolute;
+  right: 100px;
+  top: 1000;
+}
+.ns_button{
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  right: 100px;
+  top: 1100;
+}
+.nb_button{
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  right: 100px;
+  top: 1200;
+}
+.pei_button{
+  width: 200px;
+  height: 25px;
+  position: absolute;
+  right: 100px;
+  top: 1300;
+}
+.saskatchewan_button{
+  width: 120px;
+  height: 25px;
+  position: absolute;
+  right: 100px;
+  top: 1400;
+}
+.bc_button{
+  font: 'Courier New', Courier, monospace;
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  right: 100px;
+  top: 1500;
+}
+.ontario{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.vcheckForm{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color:white;
+  font-size: 20px;
+}
+.quebec{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.alberta{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.manitoba{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.yukon{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.nwt{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.nunavut{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.nfl{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.ns{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.nb{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.pei{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.saskatchewan{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+.bc{
+  position: relative;  
+  left: 100px;
+  top: 50px;
+  color: white;
+  font-size: 75px;
+  text-decoration: underline;
+}
+
+.ontariograph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+
+.quebecgraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+
+.peigraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+
+.nunavutgraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.albertagraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.yukongraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.bcgraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.saskatchewangraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.nwtgraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.nflgraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.nbgraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.manitobagraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.nsgraph{
+  position: absolute;
+  right: 100px;
+  top: 1800px;
+  width:700px;
+  height: auto;
+}
+.ontariotext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.quebectext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.albertatext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.manitobatext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.yukontext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.nwttext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.nunavuttext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.nfltext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.nstext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.nbtext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.peitext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.saskatchewantext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}
+.bctext{
+  position: relative;  
+  left: 100px;
+  top: 100px;
+  color: white;
+  font-size: 20px;
+}

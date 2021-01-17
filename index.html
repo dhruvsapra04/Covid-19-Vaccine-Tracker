@@ -1,0 +1,586 @@
+<html>
+  <head>
+    <title>Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <nav>
+      <img src="syringe.png">
+      <div class="buttons">
+      </div>
+    </nav>
+    <header class="header">
+      <img src="background.jpg">
+      <h1>Covid-19 Vaccine Tracker</h1>
+    </header>
+    <div class="dropdown">
+  <button onclick="myFunction()" 
+    <div class="canadamap">
+       
+        <img class = "center" src="canadamap.png" width="100" />
+      
+    </div>
+    <div id="ontario">
+    <h2 class="ontario">Ontario</h2>
+      <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameOntario" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageOntario" name="age" >
+    <button id="findVacOntario">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="ontariograph" src="ontariograph.png"/>
+    <p class="ontariotext">Population Vaccinated: 179,200<br># of First Dose Administered: 169,757<br># of Second Doses Administered: 19,333<br># of Doses Received from Manufacturer: 761,500<br><br>Ontario is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id ="quebec">
+    <h2 class="quebec">Quebec</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameQuebec" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageQuebec" name="age" >
+    <button id="findVacQuebec">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="quebecgraph" src="quebecgraph.png"/>
+    <p class="quebectext">Population Vaccinated: 126,836<br># of First Dose Administered: 127,073<br># of Second Doses Administered: 0<br># of Doses Received from Manufacturer: 162,175<br><br>Quebec is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id ="alberta">
+      
+      
+    <h2 class="alberta">Alberta</h2>
+    <div col-xs-8>
+      <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameAlberta" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageAlberta" name="age" >
+    <button id="findVacAlberta">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="albertagraph" src="albertagraph.png"/>
+    </div>
+    <div col-xs-4>
+    <p class="albertatext">Population Vaccinated: 73,949<br># of First Dose Administered: 74,110<br># of Second Doses Administered: 0<br># of Doses Received from Manufacturer: 84,175<br><br>Alberta is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+    </div>
+
+    <div id="manitoba">
+    <h2 class="manitoba">Manitoba</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameManitoba" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageManitoba" name="age" >
+    <button id="findVacManitoba">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="manitobagraph" src="manitobagraph.png"/>
+    <p class="manitobatext">Population Vaccinated: 13,524<br># of First Dose Administered: 11,401<br># of Second Doses Administered: 2,138<br># of Doses Received from Manufacturer: 33,625<br><br>Manitoba is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="yukon">
+    <h2 class="yukon">Yukon</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameYukon" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageYukon" name="age" >
+    <button id="findVacYukon">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="yukongraph" src="yukongraph.png"/>
+    <p class="yukontext">Population Vaccinated: 683<br># of First Dose Administered: 685<br># of Second Doses Administered: 0<br># of Doses Received from Manufacturer: 7,200<br><br>Yukon is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="nwt">
+    <h2 class="nwt">North West Territories</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameNWT" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageNWT" name="age" >
+    <button id="findVacNWT">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="nwtgraph" src="nwtgraph.png"/>
+    <p class="nwttext">Population Vaccinated: 632<br># of First Dose Administered: 512<br># of Second Doses Administered: 0<br># of Doses Received from Manufacturer: 7,200<br><br>North West Territories is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="nunavut">
+    <h2 class="nunavut">Nunavut</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameNunavut" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageNunavut" name="age" >
+    <button id="findVacNunavut">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="nunavutgraph" src="nunavutgraph.png"/>
+    <p class="nunavuttext">Population Vaccinated: 983<br># of First Dose Administered: 983<br># of Second Doses Administered: 0<br># of Doses Received from Manufacturer: 6,000<br><br>Nunavut is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="nfl">
+    <h2 class="nfl">Newfoundland and Labrador</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameNfl" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageNfl" name="age" >
+    <button id="findVacNfl">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="nflgraph" src="nflgraph.png"/>
+    <p class="nfltext">Population Vaccinated: 5,342<br># of First Dose Administered: 3,796<br># of Second Doses Administered: 1,495<br># of Doses Received from Manufacturer: 11,175<br><br>Newfoundland and Labrador is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="ns">
+    <h2 class="ns">Nova Scotia</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameNs" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageNs" name="age" >
+    <button id="findVacNs">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="nsgraph" src="nsgraph.png"/>
+    <p class="nstext">Population Vaccinated: 7,638<br># of First Dose Administered: 5,400<br># of Second Doses Administered: 2,200<br># of Doses Received from Manufacturer: 23,000<br><br>Nova Scotia is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="nb">
+    <h2 class="nb">New Brunswick</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameNb" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageNb" name="age" >
+    <button id="findVacNb">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="nbgraph" src="nbgraph.png"/>
+    <p class="nbtext">Population Vaccinated: 7,736<br># of First Dose Administered: 5,870<br># of Second Doses Administered: 1,862<br># of Doses Received from Manufacturer: 17,775<br><br>New Brunswick is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="pei">
+    <h2 class="pei">Prince Edward Island</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="namePei" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="agePei" name="age" >
+    <button id="findVacPei">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="peigraph" src="peigraph.png"/>
+    <p class="peitext">Population Vaccinated: 4,232<br># of First Dose Administered: 3,072<br># of Second Doses Administered: 1,154<br># of Doses Received from Manufacturer: 8,250<br><br>Prince Edward Island is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="saskatchewan">
+    <h2 class="saskatchewan">Saskatchewan</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameSaskatchewan" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageSaskatchewan" name="age" >
+    <button id="findVacSaskatchewan">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="saskatchewangraph" src="saskatchewangraph.png"/>
+    <p class="saskatchewantext">Population Vaccinated: 22,420<br># of First Dose Administered: 14,017<br># of Second Doses Administered: 0<br># of Doses Received from Manufacturer: 24,400<br><br>Saskatchewan is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+
+    <div id="bc">
+    <h2 class="bc">British Columbia</h2>
+    <span class="vcheckForm">
+  <label for="fname">Name:</label>
+  <input type="text" id="nameBc" name="name" >
+
+    <label for="age">Age:</label>  <input type="text" id="ageBc" name="age" >
+    <button id="findVacBc">Find Vaccine Estimate TimeLine</button>
+</span>
+    <img class="bcgraph" src="bcgraph.png"/>
+    <p class="bctext">Population Vaccinated: 76,000<br># of First Dose Administered: 75,941<br># of Second Doses Administered: 0<br># of Doses Received from Manufacturer: 99,475<br><br>British Columbia is currently in phase 1 and is providing the Pfizer Covid-19 vaccines to<br>only health care workers in hospitals, long-term care homes and retirement homes,<br> other congregate care settings and remote Indigenous communities.<br><br>Vaccinations will be available to the public in August 2021.</p>
+    </div>
+  
+    <button class="ontario_button" id = "ontariobtn">Ontario</button>
+    <button class="quebec_button" id = "quebecbtn">Quebec</button>
+    <button class="alberta_button" id = "albertabtn">Alberta</button>
+    <button class="manitoba_button" id = "manitobabtn">Manitoba</button>
+    <button class = "yukon_button" id="yukonbtn">Yukon</button>
+    <button class = "nwt_button" id="nwtbtn">North West Territories</button>
+    <button class = "nunavut_button" id="nunavutbtn">Nunavut</button>
+    <button class = "nfl_button" id="nflbtn">Newfoundland and Labrador</button>
+    <button class = "ns_button" id="nsbtn">Nova Scotia</button>
+    <button class = "nb_button" id="nbbtn">New Brunsick</button>
+    <button class = "pei_button" id="peibtn">Prince Edward Island</button>
+    <button class = "saskatchewan_button" id="saskatchewanbtn">Saskatchewan</button>
+    <button class = "bc_button" id="bcbtn">British Columbia</button>
+    <br>
+ 
+ 
+
+  </body>
+  <script>
+$(document).ready(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+ 
+  $("#ontariobtn").click(function(){
+    $("#ontario").show();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#quebecbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").show();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#albertabtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").show();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#manitobabtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").show();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#yukonbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").show();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#nwtbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").show();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#nunavutbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").show();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#nflbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").show();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#nsbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").show();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#nbbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").show();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#peibtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").show();
+    $("#saskatchewan").hide();
+    $("#bc").hide();
+  });
+
+  $("#saskatchewanbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").show();
+    ("#bc").hide();
+  });
+
+  $("#bcbtn").click(function(){
+    $("#ontario").hide();
+    $("#quebec").hide();
+    $("#alberta").hide();
+    $("#manitoba").hide();
+    $("#yukon").hide();
+    $("#nwt").hide();
+    $("#nunavut").hide();
+    $("#nfl").hide();
+    $("#ns").hide();
+    $("#nb").hide();
+    $("#pei").hide();
+    $("#saskatchewan").hide();
+    $("#bc").show();
+  });
+
+
+$("#findVacAlberta").click(function(){
+
+  var name = $('#nameAlberta').val();
+  var age =$('#ageAlberta').val();
+  processInput(name ,age);
+ 
+});
+
+$("#findVacOntario").click(function(){
+
+  var name = $('#nameOntario').val();
+  var age =$('#ageOntario').val();
+   processInput(name ,age);
+});
+
+
+$("#findVacManitoba").click(function(){
+
+  var name = $('#nameManitoba').val();
+  var age =$('#ageManitoba').val();
+   processInput(name ,age);
+});
+
+$("#findVacQuebec").click(function(){
+
+  var name = $('#nameQuebec').val();
+  var age =$('#ageQuebec').val();
+   processInput(name ,age);
+});
+
+$("#findVacYukon").click(function(){
+
+  var name = $('#nameYukon').val();
+  var age =$('#ageYukon').val();
+   processInput(name ,age);
+});
+
+$("#findVacNWT").click(function(){
+
+  var name = $('#nameNWT').val();
+  var age =$('#ageNWT').val();
+   processInput(name ,age);
+});
+
+$("#findVacNunavut").click(function(){
+
+  var name = $('#nameNunavut').val();
+  var age =$('#ageNunavut').val();
+   processInput(name ,age);
+});
+
+$("#findVacNfl").click(function(){
+
+  var name = $('#nameNfl').val();
+  var age =$('#ageNfl').val();
+   processInput(name ,age);
+});
+
+$("#findVacNs").click(function(){
+
+  var name = $('#nameNs').val();
+  var age =$('#ageNs').val();
+   processInput(name ,age);
+});
+
+$("#findVacNb").click(function(){
+
+  var name = $('#nameNb').val();
+  var age =$('#ageNb').val();
+   processInput(name ,age);
+});
+
+$("#findVacNs").click(function(){
+
+  var name = $('#nameNs').val();
+  var age =$('#ageNs').val();
+   processInput(name ,age);
+});
+
+$("#findVacPei").click(function(){
+
+  var name = $('#namePei').val();
+  var age =$('#agePei').val();
+   processInput(name ,age);
+});
+
+$("#findVacSaskatchewan").click(function(){
+
+  var name = $('#nameSaskatchewan').val();
+  var age =$('#ageSaskatchewan').val();
+   processInput(name ,age);
+});
+
+$("#findVacBc").click(function(){
+
+  var name = $('#nameBc').val();
+  var age =$('#ageBc').val();
+   processInput(name ,age);
+});
+
+/*end of block*/
+});
+
+
+function processInput(name ,age)
+{
+   var calcMonth = "";
+  var calcYear  ="";
+if(age >= 70)
+{
+ var calcMonth = "February";
+  var calcYear  ="2021";
+}
+if(age >= 60 && age <= 69)
+{
+ var calcMonth = "March";
+  var calcYear  ="2021";
+}
+if(age >= 50 && age <= 59)
+{
+ var calcMonth = "August";
+  var calcYear  ="2021";
+}
+if(age >=40 && age<= 49)
+{
+   var calcMonth = "September";
+  var calcYear  ="2021";
+}
+if(age >= 3 && age<= 39)
+{
+  var calcMonth = "October";
+  var calcYear  ="2021";
+}
+
+if(age > 2){
+  alert(name + ", You'll receive the vaccine around "  + calcMonth+", "+calcYear );
+}
+else{
+  alert(name + ", You will not need the vaccine." );
+}
+}
+
+</script>
+</html>
